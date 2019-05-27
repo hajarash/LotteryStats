@@ -131,10 +131,6 @@ func examineLottoMax(numbers []int) {
 		pool, draw = GenerateNumber(pool)
 		sort.Ints(draw)
 		win = checkForWin(numbers, draw)
-		for _,element:=range draw{
-			print (element)
-		}
-		println()
 	}
 	if win {
 		amount_spent := max_budget-x
